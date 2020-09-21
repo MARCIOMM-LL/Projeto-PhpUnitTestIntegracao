@@ -1,4 +1,12 @@
 {
+    "name": "miranda/buscador-cursos",
+    "description": "Projeto phpUnit teste de integração",
+    "authors": [
+        {
+            "name": "Márcio",
+            "email": "m-andremiranda@outlook.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Alura\\Leilao\\": "src/"
