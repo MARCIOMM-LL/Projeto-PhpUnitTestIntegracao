@@ -32,3 +32,4 @@ echo json_encode(array_map(function (Leilao $leilao) {
         'estaFinalizado' => $leilao->estaFinalizado(),
     ];
 }, $leilaoDao->recuperarNaoFinalizados()));
+
