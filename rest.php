@@ -1,7 +1,6 @@
 <?php
 
 use Alura\Leilao\Dao\Leilao as LeilaoDao;
-use Alura\Leilao\Infra\ConnectionCreator;
 use Alura\Leilao\Model\Leilao;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -13,6 +12,7 @@ $pdo->exec('create table leiloes (
     finalizado BOOL,
     dataInicio TEXT
 );');
+
 $leilaoDao = new LeilaoDao($pdo);
 
 $leilao1 = new Leilao('Leilão 1');
@@ -32,4 +32,5 @@ echo json_encode(array_map(function (Leilao $leilao) {
         'estaFinalizado' => $leilao->estaFinalizado(),
     ];
 }, $leilaoDao->recuperarNaoFinalizados()));
+
 
