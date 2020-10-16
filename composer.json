@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Alura\\Leilao\\": "src/"
+            "src\\Leilao\\": "src/"
         }
     },
     "require": {
